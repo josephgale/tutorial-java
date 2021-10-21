@@ -1,3 +1,6 @@
 What's the difference between overriding and overloading?
 Overriding has the same number of parameters, overloading has a different number of parameters.
 
+What is covariant return type?
+It's when a child class has a parent member variable. The child class can return the child classes of the variable.
+Ex: Burger extends HealthyBurger; BurgerFactory has Burger createBurger(); HealthyBurgerFactory extends BurgerFactory; Healthy Burger factory can create new Healthy Burgers
