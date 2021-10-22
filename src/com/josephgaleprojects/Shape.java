@@ -1,6 +1,7 @@
 package com.josephgaleprojects;
 
 //whenever we create a superclass/inheritance, we need to make sure super() params are satisfied
+//**these super() params are satisfied through the input of the instance constructor
 public class Shape {
     private int x;
     private int y;

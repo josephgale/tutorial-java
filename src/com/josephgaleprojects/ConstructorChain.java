@@ -2,6 +2,10 @@ package com.josephgaleprojects;
 
 /*
 Constructor Chaining:
+Summary:
+1. You can manually choose which constructor you use, or you can depend on one constructor to be the input for the
+final constructor
+
 Purpose:
 1. YOu want many construction options
 2. Some construction options have auto numbers built in
@@ -11,7 +15,8 @@ Definition:
 2. The first constructor uses the "this()" keyword which references the next constructor
 3. Each subsequent constructor must be written as such:
     a. The constructor must accept the arguments from the previous "this()" statement
-    b. if the subsequent constructor uses a "this()" to pass on, then that "this()" must contain the parameters in current constructor
+    b. if the subsequent constructor uses a "this()" to pass on, then that "this()" must contain the parameters in
+    current constructor
         i. This must happen so the value gets passed to final constructor
  */
 public class ConstructorChain {
@@ -19,6 +24,7 @@ public class ConstructorChain {
     private int myNum;
     private String myString;
     private double myDouble;
+    public static double myStaticDouble = 66.0;
 
     /* Constructor #1
         1. If someone instantiates an object without adding arguments, constructor #1 is called
@@ -57,5 +63,9 @@ public class ConstructorChain {
 
     public double getMyDouble() {
         return myDouble;
+    }
+
+    public static void staticMethod(){
+        System.out.println("Using static method");
     }
 }
